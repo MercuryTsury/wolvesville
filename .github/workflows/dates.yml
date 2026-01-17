@@ -1,8 +1,9 @@
 name: Update Dates List
 on:
-  push:
-    paths:
-      - 'data/clan/**' # Se déclenche quand on ajoute des données de clan
+  workflow_run:
+    workflows: ["data"] # Remplacez par le 'name:' exact de votre script de push
+    types:
+      - completed
 
 permissions:
   contents: write
