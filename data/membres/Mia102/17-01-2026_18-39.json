@@ -1,0 +1,642 @@
+{
+  "identifiant": "c075188d-b930-454f-a86c-35dfe941c4f5",
+  "nom_utilisateur": "Mia102",
+  "description": "je ne claim pas mon rôle (on ne joue pas à dévo-land) je donnerait une défense",
+  "niveau": 410,
+  "status": "DEFAULT",
+  "date_creation": "2020-04-13T12:42:04.071Z",
+  "derniere_connexion": "2026-01-17T18:36:15.744Z",
+  "roses": {
+    "recus": 3950,
+    "envoyees": 4488,
+    "ratio": "0.88"
+  },
+  "icone_profil": {
+    "identifiant": "09q",
+    "couleur": "#512DA8"
+  },
+  "avatar_actuel": {},
+  "avatars": [
+    {
+      "url": "https://cdn-avatars.wolvesville.com/ad71bc16-222b-4edc-b5e9-3973c430fd08.png",
+      "width": 151,
+      "height": 141,
+      "backgroundId": "UHU"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/9ce4367d-e144-411b-bca8-3b8c9f26288c.png",
+      "width": 128,
+      "height": 117,
+      "backgroundId": "E6_"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/614e6ee4-0ab9-47ab-b63a-e06c7c271af1.png",
+      "width": 137,
+      "height": 134,
+      "backgroundId": "UHU"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/6d4d30f6-e848-476e-9d69-8d10018bbb8d.png",
+      "width": 150,
+      "height": 134,
+      "backgroundId": "LOw"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/11321b5a-9800-4694-94a1-c77aef2b526d.png",
+      "width": 135,
+      "height": 116,
+      "backgroundId": "LOw"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/7b5825b9-e72d-49cd-a51c-962752433caa.png",
+      "width": 144,
+      "height": 107,
+      "backgroundId": "LOw"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/2a9f131d-2094-4bea-be1b-ea3781ba832a.png",
+      "width": 134,
+      "height": 129,
+      "backgroundId": "LOw"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/1fec5ce1-04ba-4815-baee-b14d97bdab5c.png",
+      "width": 137,
+      "height": 95,
+      "backgroundId": "LOw"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/7a29b178-8253-49b6-b729-afe0614eef89.png",
+      "width": 171,
+      "height": 135,
+      "backgroundId": "LOw"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/09983a8d-a191-4e31-b222-66e87dd441b1.png",
+      "width": 155,
+      "height": 142,
+      "backgroundId": "LOw"
+    }
+  ],
+  "badges": [
+    "A-8"
+  ],
+  "cartes": [],
+  "statistiques": {
+    "statistiques_global": {
+      "total_victoires": 5437,
+      "total_defaites": 6864,
+      "total_nuls": 55,
+      "total_suicides": 237,
+      "ratio_victoires": "0.432",
+      "ratio_defaites": "0.545",
+      "ratio_nuls": "0.004",
+      "ratio_suicides": "0.019",
+      "total_parties_quitter_apres_mort": 1236,
+      "total_parties_survecu": 1334,
+      "total_parties_morts": 2370,
+      "ratio_vivants": "0.360",
+      "ratio_morts": "0.640",
+      "total_minutes_jouer": 93066
+    },
+    "statistiques_village": {
+      "total_victoires": -1,
+      "total_defaites": -1,
+      "ratio_victoires": "0.500",
+      "ratio_defaites": "0.500"
+    },
+    "statistiques_loups": {
+      "total_victoires": -1,
+      "total_defaites": -1,
+      "ratio_victoires": "0.500",
+      "ratio_defaites": "0.500"
+    },
+    "statistiques_vote": {
+      "total_victoires": -1,
+      "total_defaites": -1,
+      "ratio_victoires": "0.500",
+      "ratio_defaites": "0.500"
+    },
+    "statistiques_solo": {
+      "total_victoires": -1,
+      "total_defaites": -1,
+      "ratio_victoires": "0.500",
+      "ratio_defaites": "0.500"
+    },
+    "trophees": [
+      {
+        "roleId": "gunner",
+        "level": 9,
+        "points": 350,
+        "pointsNextLevel": 350,
+        "category": "EASY"
+      },
+      {
+        "roleId": "wolf-seer",
+        "level": 9,
+        "points": 150,
+        "pointsNextLevel": 150,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "alpha-werewolf",
+        "level": 9,
+        "points": 150,
+        "pointsNextLevel": 150,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "lurker",
+        "level": 9,
+        "points": 50,
+        "pointsNextLevel": 50,
+        "category": "HARD"
+      },
+      {
+        "roleId": "medium",
+        "level": 8,
+        "points": 327,
+        "pointsNextLevel": 350,
+        "category": "EASY"
+      },
+      {
+        "roleId": "doctor",
+        "level": 8,
+        "points": 270,
+        "pointsNextLevel": 350,
+        "category": "EASY"
+      },
+      {
+        "roleId": "cursed-human",
+        "level": 8,
+        "points": 251,
+        "pointsNextLevel": 350,
+        "category": "EASY"
+      },
+      {
+        "roleId": "junior-werewolf",
+        "level": 8,
+        "points": 133,
+        "pointsNextLevel": 150,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "jailer",
+        "level": 7,
+        "points": 216,
+        "pointsNextLevel": 250,
+        "category": "EASY"
+      },
+      {
+        "roleId": "aura-seer",
+        "level": 7,
+        "points": 214,
+        "pointsNextLevel": 250,
+        "category": "EASY"
+      },
+      {
+        "roleId": "beast-hunter",
+        "level": 7,
+        "points": 210,
+        "pointsNextLevel": 250,
+        "category": "EASY"
+      },
+      {
+        "roleId": "headhunter",
+        "level": 7,
+        "points": 122,
+        "pointsNextLevel": 125,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "shadow-wolf",
+        "level": 7,
+        "points": 115,
+        "pointsNextLevel": 125,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "seer",
+        "level": 6,
+        "points": 176,
+        "pointsNextLevel": 200,
+        "category": "EASY"
+      },
+      {
+        "roleId": "gambler",
+        "level": 6,
+        "points": 153,
+        "pointsNextLevel": 200,
+        "category": "EASY"
+      },
+      {
+        "roleId": "avenger",
+        "level": 5,
+        "points": 144,
+        "pointsNextLevel": 150,
+        "category": "EASY"
+      },
+      {
+        "roleId": "bodyguard",
+        "level": 5,
+        "points": 138,
+        "pointsNextLevel": 150,
+        "category": "EASY"
+      },
+      {
+        "roleId": "mayor",
+        "level": 5,
+        "points": 134,
+        "pointsNextLevel": 150,
+        "category": "EASY"
+      },
+      {
+        "roleId": "witch",
+        "level": 5,
+        "points": 126,
+        "pointsNextLevel": 150,
+        "category": "EASY"
+      },
+      {
+        "roleId": "tough-guy",
+        "level": 5,
+        "points": 122,
+        "pointsNextLevel": 150,
+        "category": "EASY"
+      },
+      {
+        "roleId": "detective",
+        "level": 5,
+        "points": 121,
+        "pointsNextLevel": 150,
+        "category": "EASY"
+      },
+      {
+        "roleId": "priest",
+        "level": 5,
+        "points": 115,
+        "pointsNextLevel": 150,
+        "category": "EASY"
+      },
+      {
+        "roleId": "harlot",
+        "level": 5,
+        "points": 107,
+        "pointsNextLevel": 150,
+        "category": "EASY"
+      },
+      {
+        "roleId": "wolf-shaman",
+        "level": 5,
+        "points": 73,
+        "pointsNextLevel": 75,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "lovers",
+        "level": 5,
+        "points": 66,
+        "pointsNextLevel": 75,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "guardian-wolf",
+        "level": 5,
+        "points": 61,
+        "pointsNextLevel": 75,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "nightmare-werewolf",
+        "level": 5,
+        "points": 50,
+        "pointsNextLevel": 75,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "ritualist",
+        "level": 4,
+        "points": 85,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "mortician",
+        "level": 4,
+        "points": 74,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "cupid",
+        "level": 4,
+        "points": 73,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "flower-child",
+        "level": 4,
+        "points": 67,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "pacifist",
+        "level": 4,
+        "points": 64,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "grave-robber",
+        "level": 4,
+        "points": 58,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "warden",
+        "level": 4,
+        "points": 57,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "fool",
+        "level": 4,
+        "points": 35,
+        "pointsNextLevel": 50,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "werewolf",
+        "level": 4,
+        "points": 28,
+        "pointsNextLevel": 50,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "bomber",
+        "level": 4,
+        "points": 13,
+        "pointsNextLevel": 16,
+        "category": "HARD"
+      },
+      {
+        "roleId": "corruptor",
+        "level": 4,
+        "points": 13,
+        "pointsNextLevel": 16,
+        "category": "HARD"
+      },
+      {
+        "roleId": "loudmouth",
+        "level": 3,
+        "points": 49,
+        "pointsNextLevel": 50,
+        "category": "EASY"
+      },
+      {
+        "roleId": "night-watchman",
+        "level": 3,
+        "points": 47,
+        "pointsNextLevel": 50,
+        "category": "EASY"
+      },
+      {
+        "roleId": "serial-killer",
+        "level": 3,
+        "points": 10,
+        "pointsNextLevel": 13,
+        "category": "HARD"
+      },
+      {
+        "roleId": "pumpkin-oracle",
+        "level": 2,
+        "points": 34,
+        "pointsNextLevel": 40,
+        "category": "EASY"
+      },
+      {
+        "roleId": "soulbinder",
+        "level": 2,
+        "points": 30,
+        "pointsNextLevel": 40,
+        "category": "EASY"
+      },
+      {
+        "roleId": "kitten-wolf",
+        "level": 2,
+        "points": 19,
+        "pointsNextLevel": 20,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "wolf-pacifist",
+        "level": 2,
+        "points": 18,
+        "pointsNextLevel": 20,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "accomplice",
+        "level": 2,
+        "points": 9,
+        "pointsNextLevel": 10,
+        "category": "HARD"
+      },
+      {
+        "roleId": "conjuror",
+        "level": 1,
+        "points": 27,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "spirit-seer",
+        "level": 1,
+        "points": 26,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "sheriff",
+        "level": 1,
+        "points": 25,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "ghost-lady",
+        "level": 1,
+        "points": 22,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "marksman",
+        "level": 1,
+        "points": 22,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "stubborn-werewolf",
+        "level": 1,
+        "points": 13,
+        "pointsNextLevel": 15,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "werewolf-berserk",
+        "level": 1,
+        "points": 11,
+        "pointsNextLevel": 15,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "bandit",
+        "level": 1,
+        "points": 4,
+        "pointsNextLevel": 7,
+        "category": "HARD"
+      },
+      {
+        "roleId": "vigilante",
+        "level": 0,
+        "points": 18,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "butcher",
+        "level": 0,
+        "points": 17,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "analyst",
+        "level": 0,
+        "points": 16,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "pumpkin-dealer",
+        "level": 0,
+        "points": 15,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "grumpy-grandma",
+        "level": 0,
+        "points": 12,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "sorcerer",
+        "level": 0,
+        "points": 8,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "toxic-wolf",
+        "level": 0,
+        "points": 8,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "blind-werewolf",
+        "level": 0,
+        "points": 6,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "ghost-wolf",
+        "level": 0,
+        "points": 6,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "jelly-wolf",
+        "level": 0,
+        "points": 5,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "wolffluencer",
+        "level": 0,
+        "points": 5,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "recruit",
+        "level": 0,
+        "points": 5,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "cannibal",
+        "level": 0,
+        "points": 3,
+        "pointsNextLevel": 4,
+        "category": "HARD"
+      },
+      {
+        "roleId": "arsonist",
+        "level": 0,
+        "points": 2,
+        "pointsNextLevel": 4,
+        "category": "HARD"
+      },
+      {
+        "roleId": "evil-detective",
+        "level": 0,
+        "points": 2,
+        "pointsNextLevel": 4,
+        "category": "HARD"
+      },
+      {
+        "roleId": "shapeshifter",
+        "level": 0,
+        "points": 2,
+        "pointsNextLevel": 4,
+        "category": "HARD"
+      }
+    ]
+  },
+  "clan": {
+    "donations": {
+      "gold": {
+        "week": 0,
+        "month": 0,
+        "year": 500,
+        "allTime": 500
+      },
+      "gems": {
+        "week": 0,
+        "month": 0,
+        "year": 20,
+        "allTime": 20
+      }
+    },
+    "xp_clan_total": 483720,
+    "staff": false,
+    "quetes": {
+      "participation_quetes": true,
+      "nombre_or": 19,
+      "nombre_gemmes": 2
+    }
+  }
+}
