@@ -25,3 +25,7 @@ jobs:
           git add data/  # Ajoute les nouveaux dossiers créés
           git commit -m "Automated data backup: $(date)" || echo "No changes to commit"
           git push
+      - name: Generate dates.json
+        run: |
+          cd data/clan
+          ls -1 *.json | sed 's/\.json$//' | jq -R -s -c 'split("\n") | map(select(length > 0)) | sort | reverse' > ../../dates.json
