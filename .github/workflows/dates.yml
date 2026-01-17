@@ -1,7 +1,7 @@
 name: Update Dates List
 on:
   workflow_run:
-    workflows: ["data"] # Remplacez par le 'name:' exact de votre script de push
+    workflows: ["Execution Programmée"] # Remplacez par le 'name:' exact de votre script de push
     types:
       - completed
 
