@@ -118,16 +118,16 @@
 
     const getVal = (obj, path) => path.split('.').reduce((a, b) => (a ? a[b] : null), obj);
 
-    // Initialisation : Charger les dates depuis PHP
     async function init() {
         try {
-            const resp = await fetch('list-dates.php');
+            // On charge le fichier JSON fixe au lieu du PHP
+            const resp = await fetch('dates.json'); 
             const dates = await resp.json();
             const select = document.getElementById('dateSelect');
             select.innerHTML = dates.map(d => `<option value="${d}">${d}</option>`).join('');
             if(dates.length > 0) loadData();
         } catch (e) {
-            document.getElementById('statusMsg').innerHTML = "Erreur de chargement des dates.";
+            document.getElementById('statusMsg').innerHTML = "Créez un fichier dates.json à la racine.";
         }
     }
 
