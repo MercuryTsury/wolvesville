@@ -1,57 +1,55 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const app = express();
-const PORT = 3000;
+// Remplacez ces fonctions dans votre <script>
+const GITHUB_USER = "MercuryTsury";
+const GITHUB_REPO = "wolvesville";
 
-app.use(express.static('.'));
-
-// Récupère la liste de toutes les dates uniques présentes dans les fichiers JSON
-app.get('/api/available-dates', (req, res) => {
-    const dates = new Set();
-    const scanDir = (dir) => {
-        if (!fs.existsSync(dir)) return;
-        fs.readdirSync(dir, { withFileTypes: true }).forEach(entry => {
-            const fullPath = path.join(dir, entry.name);
-            if (entry.isDirectory()) scanDir(fullPath);
-            else if (entry.name.endsWith('.json')) dates.add(entry.name.replace('.json', ''));
-        });
-    };
-    scanDir('./data');
-    res.json(Array.from(dates).sort().reverse());
-});
-
-app.get('/api/comparison', (req, res) => {
-    const targetDate = req.query.date; // Format JJ-MM-AAAA_HH-MM
+async function init() {
     try {
-        const clanDir = './data/clan';
-        let clanFile;
+        // On demande à GitHub la liste des fichiers dans le dossier data/clan
+        const resp = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/data/clan`);
+        const files = await resp.json();
         
-        if (targetDate && fs.existsSync(path.join(clanDir, `${targetDate}.json`))) {
-            clanFile = path.join(clanDir, `${targetDate}.json`);
-        } else {
-            // Par défaut, le plus récent
-            const files = fs.readdirSync(clanDir).filter(f => f.endsWith('.json')).sort().reverse();
-            clanFile = path.join(clanDir, files[0]);
-        }
+        // On filtre pour n'avoir que les .json et on récupère leurs noms
+        const dates = files
+            .filter(f => f.name.endsWith('.json'))
+            .map(f => f.name.replace('.json', ''))
+            .sort()
+            .reverse();
 
-        const clanData = JSON.parse(fs.readFileSync(clanFile, 'utf8'));
-        const membersData = [];
-
-        clanData.membres.forEach(name => {
-            const memberDir = `./data/membres/${name}`;
-            let mFile;
-            if (targetDate && fs.existsSync(path.join(memberDir, `${targetDate}.json`))) {
-                mFile = path.join(memberDir, `${targetDate}.json`);
-            } else if (fs.existsSync(memberDir)) {
-                const mFiles = fs.readdirSync(memberDir).filter(f => f.endsWith('.json')).sort().reverse();
-                if (mFiles[0]) mFile = path.join(memberDir, mFiles[0]);
-            }
-            if (mFile) membersData.push(JSON.parse(fs.readFileSync(mFile, 'utf8')));
+        const select = document.getElementById('dateSelect');
+        dates.forEach(d => {
+            select.innerHTML += `<option value="${d}">${d}</option>`;
         });
+        
+        loadData();
+    } catch (e) {
+        console.error("Erreur d'initialisation:", e);
+    }
+}
 
-        res.json(membersData);
-    } catch (e) { res.status(500).json({ error: e.message }); }
-});
+async function loadData() {
+    const date = document.getElementById('dateSelect').value;
+    const loading = document.getElementById('loadingMsg');
+    loading.innerText = "Chargement...";
 
-app.listen(PORT, () => console.log(`Serveur prêt : http://localhost:${PORT}`));
+    try {
+        // 1. Charger le fichier du clan pour avoir la liste des membres
+        const clanResp = await fetch(`./data/clan/${date}.json`);
+        const clanData = await clanResp.json();
+        
+        // 2. Charger les fichiers de chaque membre en parallèle
+        const promises = clanData.membres.map(name => 
+            fetch(`./data/membres/${name}/${date}.json`)
+                .then(r => r.ok ? r.json() : null)
+                .catch(() => null)
+        );
+
+        const results = await Promise.all(promises);
+        currentData = results.filter(r => r !== null); // On enlève les erreurs
+        
+        render();
+        loading.innerText = "";
+    } catch (e) {
+        loading.innerText = "Erreur de chargement.";
+        console.error(e);
+    }
+}
