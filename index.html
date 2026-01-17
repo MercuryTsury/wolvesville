@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Wolvesville Stats Pro</title>
+    <style>
+        :root { --bg: #0b0e14; --card: #151921; --accent: #4e5efc; --text: #e0e6ed; }
+        body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; }
+        
+        /* Menu Onglets */
+        .tabs { display: flex; gap: 5px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 10px; }
+        .tab-btn { background: var(--card); border: none; color: white; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: 0.3s; white-space: nowrap;}
+        .tab-btn.active { background: var(--accent); }
+
+        /* Contrôles */
+        .controls { background: var(--card); padding: 15px; border-radius: 8px; margin-bottom: 20px; display: flex; align-items: center; gap: 20px; }
+        select { background: #1b222c; color: white; border: 1px solid #303e4d; padding: 8px; border-radius: 4px; }
+
+        /* Tableaux */
+        .table-container { background: var(--card); border-radius: 8px; overflow: auto; max-height: 70vh; }
+        table { width: 100%; border-collapse: collapse; min-width: 1000px; }
+        th { background: #1c232e; padding: 12px; text-align: left; cursor: pointer; position: sticky; top: 0; font-size: 0.9em; border-bottom: 2px solid var(--accent); }
+        th:hover { background: #252f3d; }
+        td { padding: 10px 12px; border-bottom: 1px solid #232d3a; font-size: 0.85em; }
+        tr:hover { background: #1b222c; }
+
+        .pct { color: #2ecc71; font-weight: bold; }
+        .lvl { color: #fbc02d; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>🐺 Kunugigaoka Dashboard</h2>
+
+    <div class="controls">
+        <label>Date des données :</label>
+        <select id="dateSelect" onchange="loadData()"><option value="">Dernières en date</option></select>
+        <span id="loadingMsg"></span>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('general', this)">1. Général</button>
+        <button class="tab-btn" onclick="switchTab('global', this)">2. Global</button>
+        <button class="tab-btn" onclick="switchTab('village', this)">3. Village</button>
+        <button class="tab-btn" onclick="switchTab('loups', this)">4. Loups</button>
+        <button class="tab-btn" onclick="switchTab('vote', this)">5. Vote</button>
+        <button class="tab-btn" onclick="switchTab('solo', this)">6. Solo</button>
+        <button class="tab-btn" onclick="switchTab('clan', this)">7. Clan</button>
+    </div>
+
+    <div class="table-container">
+        <table id="mainTable">
+            <thead><tr id="tableHead"></tr></thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+<script>
+    let currentData = [];
+    let currentTab = 'general';
+
+    // Configuration des colonnes
+    const config = {
+        general: [
+            { label: 'Utilisateur', key: 'nom_utilisateur' },
+            { label: 'Description', key: 'description' },
+            { label: 'Niveau', key: 'niveau', class: 'lvl' },
+            { label: 'Création', key: 'date_creation', format: 'date' },
+            { label: 'Dernière Conn.', key: 'derniere_connexion', format: 'date' },
+            { label: '🌹 Reçues', key: 'roses.recus' },
+            { label: '🌹 Envoyées', key: 'roses.envoyees' },
+            { label: 'Ratio R/E', key: 'roses.ratio', format: 'pct' }
+        ],
+        global: [
+            { label: 'Utilisateur', key: 'nom_utilisateur' },
+            { label: 'Niveau', key: 'niveau' },
+            { label: 'Victoires', key: 'statistiques.statistiques_global.total_victoires' },
+            { label: 'Défaites', key: 'statistiques.statistiques_global.total_defaites' },
+            { label: 'Nuls', key: 'statistiques.statistiques_global.total_nuls' },
+            { label: 'Suicides', key: 'statistiques.statistiques_global.total_suicides' },
+            { label: 'Vic %', key: 'statistiques.statistiques_global.ratio_victoires', format: 'pct' },
+            { label: 'Def %', key: 'statistiques.statistiques_global.ratio_defaites', format: 'pct' },
+            { label: 'Nul %', key: 'statistiques.statistiques_global.ratio_nuls', format: 'pct' },
+            { label: 'Sui %', key: 'statistiques.statistiques_global.ratio_suicides', format: 'pct' },
+            { label: 'Quitté', key: 'statistiques.statistiques_global.total_parties_quitter_apres_mort' },
+            { label: 'Survécu', key: 'statistiques.statistiques_global.total_parties_survecu' },
+            { label: 'Morts', key: 'statistiques.statistiques_global.total_parties_morts' },
+            { label: 'Vie %', key: 'statistiques.statistiques_global.ratio_vivants', format: 'pct' },
+            { label: 'Mort %', key: 'statistiques.statistiques_global.ratio_morts', format: 'pct' },
+            { label: 'Temps (min)', key: 'statistiques.statistiques_global.total_minutes_jouer' }
+        ],
+        village: [
+            { label: 'Utilisateur', key: 'nom_utilisateur' },
+            { label: 'Niveau', key: 'niveau' },
+            { label: 'Victoires', key: 'statistiques.statistiques_village.total_victoires' },
+            { label: 'Défaites', key: 'statistiques.statistiques_village.total_defaites' },
+            { label: 'Vic %', key: 'statistiques.statistiques_village.ratio_victoires', format: 'pct' },
+            { label: 'Def %', key: 'statistiques.statistiques_village.ratio_defaites', format: 'pct' }
+        ],
+        loups: [
+            { label: 'Utilisateur', key: 'nom_utilisateur' },
+            { label: 'Niveau', key: 'niveau' },
+            { label: 'Victoires', key: 'statistiques.statistiques_loups.total_victoires' },
+            { label: 'Défaites', key: 'statistiques.statistiques_loups.total_defaites' },
+            { label: 'Vic %', key: 'statistiques.statistiques_loups.ratio_victoires', format: 'pct' },
+            { label: 'Def %', key: 'statistiques.statistiques_loups.ratio_defaites', format: 'pct' }
+        ],
+        vote: [
+            { label: 'Utilisateur', key: 'nom_utilisateur' },
+            { label: 'Niveau', key: 'niveau' },
+            { label: 'Victoires', key: 'statistiques.statistiques_vote.total_victoires' },
+            { label: 'Défaites', key: 'statistiques.statistiques_vote.total_defaites' },
+            { label: 'Vic %', key: 'statistiques.statistiques_vote.ratio_victoires', format: 'pct' },
+            { label: 'Def %', key: 'statistiques.statistiques_vote.ratio_defaites', format: 'pct' }
+        ],
+        solo: [
+            { label: 'Utilisateur', key: 'nom_utilisateur' },
+            { label: 'Niveau', key: 'niveau' },
+            { label: 'Victoires', key: 'statistiques.statistiques_solo.total_victoires' },
+            { label: 'Défaites', key: 'statistiques.statistiques_solo.total_defaites' },
+            { label: 'Vic %', key: 'statistiques.statistiques_solo.ratio_victoires', format: 'pct' },
+            { label: 'Def %', key: 'statistiques.statistiques_solo.ratio_defaites', format: 'pct' }
+        ],
+        clan: [
+            { label: 'Utilisateur', key: 'nom_utilisateur' },
+            { label: 'Gold Week', key: 'clan.donations.gold.week' },
+            { label: 'Gold Month', key: 'clan.donations.gold.month' },
+            { label: 'Gold Year', key: 'clan.donations.gold.year' },
+            { label: 'Gold All', key: 'clan.donations.gold.allTime' },
+            { label: 'Gems Week', key: 'clan.donations.gems.week' },
+            { label: 'Gems All', key: 'clan.donations.gems.allTime' },
+            { label: 'XP Clan', key: 'clan.xp_clan_total' },
+            { label: 'Staff', key: 'clan.staff', format: 'bool' },
+            { label: 'Quêtes', key: 'clan.quetes.nombre_or' }
+        ]
+    };
+
+    // Aide pour accéder aux objets imbriqués (ex: "statistiques.global.victoires")
+    const getVal = (obj, path) => path.split('.').reduce((a, b) => (a ? a[b] : null), obj);
+
+    async function init() {
+        const dateResp = await fetch('/api/available-dates');
+        const dates = await dateResp.json();
+        const select = document.getElementById('dateSelect');
+        dates.forEach(d => select.innerHTML += `<option value="${d}">${d}</option>`);
+        loadData();
+    }
+
+    async function loadData() {
+        const date = document.getElementById('dateSelect').value;
+        const resp = await fetch(`/api/comparison?date=${date}`);
+        currentData = await resp.json();
+        render();
+    }
+
+    function switchTab(tab, btn) {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentTab = tab;
+        render();
+    }
+
+    function render() {
+        const columns = config[currentTab];
+        const head = document.getElementById('tableHead');
+        const body = document.getElementById('tableBody');
+
+        head.innerHTML = columns.map(col => `<th onclick="sortTable('${col.key}')">${col.label} ↕</th>`).join('');
+        
+        body.innerHTML = currentData.map(player => {
+            return `<tr>${columns.map(col => {
+                let val = getVal(player, col.key);
+                let display = val;
+                
+                if (col.format === 'pct') display = `<span class="pct">${(parseFloat(val) * 100).toFixed(1)}%</span>`;
+                if (col.format === 'date') display = new Date(val).toLocaleDateString();
+                if (col.format === 'bool') display = val ? '✅' : '❌';
+                if (val === null || val === undefined) display = '-';
+
+                return `<td class="${col.class || ''}">${display}</td>`;
+            }).join('')}</tr>`;
+        }).join('');
+    }
+
+    let sortOrder = 1;
+    function sortTable(key) {
+        sortOrder *= -1;
+        currentData.sort((a, b) => {
+            let valA = getVal(a, key);
+            let valB = getVal(b, key);
+            if (typeof valA === 'string') return valA.localeCompare(valB) * sortOrder;
+            return (valA - valB) * sortOrder;
+        });
+        render();
+    }
+
+    init();
+</script>
+</body>
+</html>
