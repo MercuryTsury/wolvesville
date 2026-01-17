@@ -3,7 +3,7 @@ on:
   schedule:
     # Syntaxe : "Minutes Heures Jour_du_mois Mois Jour_de_la_semaine"
     # Attention : L'heure est en UTC (souvent 1h ou 2h de moins que la France)
-    - cron: '1 19 * * *'
+    - cron: '2 18 * * *'
   workflow_dispatch: # Permet aussi de le lancer manuellement pour tester
 
 jobs:
