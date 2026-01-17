@@ -15,4 +15,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+      - name: Installer les modules
+        run: npm install  # Cela va lire votre package.json
       - run: node index.js
