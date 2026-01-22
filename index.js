@@ -58,7 +58,7 @@ async function saveDailyData() {
             const total_vote = stats.votingWinCount + stats.votingLoseCount;
             const total_solo = stats.soloWinCount + stats.soloLoseCount;
             const total_etat = stats.gamesSurvivedCount + stats.gamesKilledCount;
-            const safe = (n, d) => (d === 0 ? 0 : (n / d).toFixed(3));
+            const safe = (n, d) => (d === 0 ? 0 : (n / d).toFixed(10));
 
             membersData.push({
                 identifiant: detail.playerId,
