@@ -1,0 +1,104 @@
+{
+  "identifiant": "93f033d9-23cf-4ba2-9292-15fac99ab6d8",
+  "nom_utilisateur": "tsarmd",
+  "description": "👻: md100tral \n",
+  "niveau": 3,
+  "status": "DEFAULT",
+  "date_creation": "2022-03-12T23:02:17.616Z",
+  "derniere_connexion": "2022-03-20T12:57:46.492Z",
+  "roses": {
+    "recus": 3,
+    "envoyees": 0,
+    "ratio": "3.00"
+  },
+  "icone_profil": {
+    "identifiant": "2e2",
+    "couleur": "#1976D2"
+  },
+  "avatar_actuel": {},
+  "avatars": [
+    {
+      "url": "https://cdn-avatars.wolvesville.com/a8b4fabd-64e1-46e0-8e9d-076871faaf84.png",
+      "width": 67,
+      "height": 99
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/d793b014-0188-40c7-a243-1cb61457b036.png",
+      "width": 84,
+      "height": 119
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/347a0968-5f85-4025-b514-263d2ad2de6f.png",
+      "width": 84,
+      "height": 119
+    }
+  ],
+  "badges": [],
+  "cartes": [],
+  "statistiques": {
+    "statistiques_global": {
+      "total_victoires": 3,
+      "total_defaites": 10,
+      "total_nuls": 0,
+      "total_suicides": 0,
+      "ratio_victoires": "0.2307692308",
+      "ratio_defaites": "0.7692307692",
+      "ratio_nuls": "0.0000000000",
+      "ratio_suicides": "0.0000000000",
+      "total_parties_quitter_apres_mort": 5,
+      "total_parties_survecu": 3,
+      "total_parties_morts": 10,
+      "ratio_vivants": "0.2307692308",
+      "ratio_morts": "0.7692307692",
+      "total_minutes_jouer": 96
+    },
+    "statistiques_village": {
+      "total_victoires": 3,
+      "total_defaites": 7,
+      "ratio_victoires": "0.3000000000",
+      "ratio_defaites": "0.7000000000"
+    },
+    "statistiques_loups": {
+      "total_victoires": 0,
+      "total_defaites": 2,
+      "ratio_victoires": "0.0000000000",
+      "ratio_defaites": "1.0000000000"
+    },
+    "statistiques_vote": {
+      "total_victoires": 0,
+      "total_defaites": 0,
+      "ratio_victoires": 0,
+      "ratio_defaites": 0
+    },
+    "statistiques_solo": {
+      "total_victoires": 0,
+      "total_defaites": 1,
+      "ratio_victoires": "0.0000000000",
+      "ratio_defaites": "1.0000000000"
+    },
+    "trophees": []
+  },
+  "clan": {
+    "donations": {
+      "gold": {
+        "week": 0,
+        "month": 0,
+        "year": 0,
+        "allTime": 0
+      },
+      "gems": {
+        "week": 0,
+        "month": 0,
+        "year": 0,
+        "allTime": 0
+      }
+    },
+    "xp_clan_total": 60,
+    "staff": false,
+    "quetes": {
+      "participation_quetes": false,
+      "nombre_or": 0,
+      "nombre_gemmes": 0
+    }
+  }
+}
