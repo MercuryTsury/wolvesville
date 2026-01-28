@@ -1,0 +1,287 @@
+{
+  "identifiant": "d23aa421-8469-4f33-8534-ad24bbe557d8",
+  "nom_utilisateur": "Soloumy",
+  "description": "\"La vie est un combat\" (Peach Chat)",
+  "niveau": 132,
+  "status": "DEFAULT",
+  "date_creation": "2019-04-05T14:35:35.070Z",
+  "derniere_connexion": "2024-12-26T20:18:30.093Z",
+  "roses": {
+    "recus": 585,
+    "envoyees": 1156,
+    "ratio": "0.51"
+  },
+  "icone_profil": {
+    "identifiant": "tOb",
+    "couleur": "#ffaaaa"
+  },
+  "avatar_actuel": {},
+  "avatars": [
+    {
+      "url": "https://cdn-avatars.wolvesville.com/7860093d-4b54-4013-8539-4fc0fa080a9d.png",
+      "width": 104,
+      "height": 101,
+      "backgroundId": "ZFP"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/1df109fc-9e29-436e-a28a-e80976dfb2ef.png",
+      "width": 131,
+      "height": 131,
+      "backgroundId": "ZFP"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/78bcce32-df1a-42f2-80cf-d46267900fc0.png",
+      "width": 152,
+      "height": 150,
+      "backgroundId": "ZFP"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/54bd6164-eaf4-4247-98c0-ca5530a004e1.png",
+      "width": 129,
+      "height": 131,
+      "backgroundId": "ZFP"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/01c21d79-1d7b-44ce-93b4-dd12bdc09aa3.png",
+      "width": 148,
+      "height": 135,
+      "backgroundId": "ZFP"
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/9aaa44f6-aca8-40d9-a01a-29f8c5a81b7c.png",
+      "width": 131,
+      "height": 131,
+      "backgroundId": "ZFP"
+    }
+  ],
+  "badges": [],
+  "cartes": [],
+  "statistiques": {
+    "statistiques_global": {
+      "total_victoires": 750,
+      "total_defaites": 696,
+      "total_nuls": 7,
+      "total_suicides": 38,
+      "ratio_victoires": "0.5030181087",
+      "ratio_defaites": "0.4668008048",
+      "ratio_nuls": "0.0046948357",
+      "ratio_suicides": "0.0254862508",
+      "total_parties_quitter_apres_mort": 129,
+      "total_parties_survecu": 299,
+      "total_parties_morts": 575,
+      "ratio_vivants": "0.3421052632",
+      "ratio_morts": "0.6578947368",
+      "total_minutes_jouer": 9018
+    },
+    "statistiques_village": {
+      "total_victoires": 516,
+      "total_defaites": 290,
+      "ratio_victoires": "0.6401985112",
+      "ratio_defaites": "0.3598014888"
+    },
+    "statistiques_loups": {
+      "total_victoires": 76,
+      "total_defaites": 223,
+      "ratio_victoires": "0.2541806020",
+      "ratio_defaites": "0.7458193980"
+    },
+    "statistiques_vote": {
+      "total_victoires": 26,
+      "total_defaites": 66,
+      "ratio_victoires": "0.2826086957",
+      "ratio_defaites": "0.7173913043"
+    },
+    "statistiques_solo": {
+      "total_victoires": 3,
+      "total_defaites": 50,
+      "ratio_victoires": "0.0566037736",
+      "ratio_defaites": "0.9433962264"
+    },
+    "trophees": [
+      {
+        "roleId": "lovers",
+        "level": 8,
+        "points": 129,
+        "pointsNextLevel": 150,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "doctor",
+        "level": 4,
+        "points": 54,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "aura-seer",
+        "level": 4,
+        "points": 51,
+        "pointsNextLevel": 100,
+        "category": "EASY"
+      },
+      {
+        "roleId": "headhunter",
+        "level": 4,
+        "points": 25,
+        "pointsNextLevel": 50,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "medium",
+        "level": 3,
+        "points": 47,
+        "pointsNextLevel": 50,
+        "category": "EASY"
+      },
+      {
+        "roleId": "seer",
+        "level": 3,
+        "points": 40,
+        "pointsNextLevel": 50,
+        "category": "EASY"
+      },
+      {
+        "roleId": "cursed-human",
+        "level": 2,
+        "points": 36,
+        "pointsNextLevel": 40,
+        "category": "EASY"
+      },
+      {
+        "roleId": "jailer",
+        "level": 2,
+        "points": 31,
+        "pointsNextLevel": 40,
+        "category": "EASY"
+      },
+      {
+        "roleId": "wolf-seer",
+        "level": 2,
+        "points": 19,
+        "pointsNextLevel": 20,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "alpha-werewolf",
+        "level": 2,
+        "points": 17,
+        "pointsNextLevel": 20,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "priest",
+        "level": 1,
+        "points": 26,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "vigilante",
+        "level": 1,
+        "points": 25,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "bodyguard",
+        "level": 1,
+        "points": 25,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "gunner",
+        "level": 1,
+        "points": 24,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "witch",
+        "level": 1,
+        "points": 21,
+        "pointsNextLevel": 30,
+        "category": "EASY"
+      },
+      {
+        "roleId": "werewolf",
+        "level": 1,
+        "points": 13,
+        "pointsNextLevel": 15,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "junior-werewolf",
+        "level": 1,
+        "points": 12,
+        "pointsNextLevel": 15,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "detective",
+        "level": 0,
+        "points": 19,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "ritualist",
+        "level": 0,
+        "points": 18,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "mayor",
+        "level": 0,
+        "points": 14,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "beast-hunter",
+        "level": 0,
+        "points": 13,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "harlot",
+        "level": 0,
+        "points": 10,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "wolf-shaman",
+        "level": 0,
+        "points": 7,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      }
+    ]
+  },
+  "clan": {
+    "donations": {
+      "gold": {
+        "week": 0,
+        "month": 0,
+        "year": 0,
+        "allTime": 30295
+      },
+      "gems": {
+        "week": 0,
+        "month": 0,
+        "year": 0,
+        "allTime": 400
+      }
+    },
+    "xp_clan_total": 198549,
+    "staff": true,
+    "quetes": {
+      "participation_quetes": true,
+      "nombre_or": 64,
+      "nombre_gemmes": 3
+    }
+  }
+}
