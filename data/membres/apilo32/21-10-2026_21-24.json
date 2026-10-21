@@ -1,0 +1,155 @@
+{
+  "identifiant": "ff4e8a09-e4c8-45e3-bc53-e78d2580809a",
+  "nom_utilisateur": "apilo32",
+  "description": "",
+  "niveau": 17,
+  "status": "DEFAULT",
+  "date_creation": "2022-02-25T10:20:45.404Z",
+  "derniere_connexion": "2023-08-30T13:33:30.375Z",
+  "roses": {
+    "recus": 63,
+    "envoyees": 132,
+    "ratio": "0.48"
+  },
+  "icone_profil": {
+    "identifiant": "uL3",
+    "couleur": "#5D4037"
+  },
+  "avatar_actuel": {},
+  "avatars": [
+    {
+      "url": "https://cdn-avatars.wolvesville.com/977dbd38-7712-402d-a75e-ad33c774af0a.png",
+      "width": 70,
+      "height": 98
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/bb964836-7507-41ad-b2cc-b852d9d2b47d.png",
+      "width": 100,
+      "height": 126
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/40a8eade-eaf4-445b-84cf-d0975580a6e2.png",
+      "width": 138,
+      "height": 119
+    }
+  ],
+  "badges": [],
+  "cartes": [
+    {
+      "roleId1": "flower-child",
+      "roleIdBase": "flower-child",
+      "roleIdsAdvanced": [],
+      "abilityId1": "rose-single-boost-01",
+      "rarity": "COMMON"
+    },
+    {
+      "roleId1": "bandit",
+      "roleIdBase": "bandit",
+      "roleIdsAdvanced": [],
+      "abilityId1": "rose-single-boost-01",
+      "rarity": "COMMON"
+    },
+    {
+      "roleId1": "detective",
+      "roleIdBase": "detective",
+      "roleIdsAdvanced": [],
+      "abilityId1": "talismans-no-consume-01",
+      "rarity": "COMMON"
+    },
+    {
+      "roleId1": "mayor",
+      "roleIdBase": "mayor",
+      "roleIdsAdvanced": [],
+      "abilityId1": "xp-increase-bp-01",
+      "rarity": "COMMON"
+    }
+  ],
+  "statistiques": {
+    "statistiques_global": {
+      "total_victoires": 87,
+      "total_defaites": 92,
+      "total_nuls": 1,
+      "total_suicides": 11,
+      "ratio_victoires": "0.4554973822",
+      "ratio_defaites": "0.4816753927",
+      "ratio_nuls": "0.0052356021",
+      "ratio_suicides": "0.0575916230",
+      "total_parties_quitter_apres_mort": 66,
+      "total_parties_survecu": 46,
+      "total_parties_morts": 88,
+      "ratio_vivants": "0.3432835821",
+      "ratio_morts": "0.6567164179",
+      "total_minutes_jouer": 1260
+    },
+    "statistiques_village": {
+      "total_victoires": 63,
+      "total_defaites": 41,
+      "ratio_victoires": "0.6057692308",
+      "ratio_defaites": "0.3942307692"
+    },
+    "statistiques_loups": {
+      "total_victoires": 16,
+      "total_defaites": 28,
+      "ratio_victoires": "0.3636363636",
+      "ratio_defaites": "0.6363636364"
+    },
+    "statistiques_vote": {
+      "total_victoires": 7,
+      "total_defaites": 12,
+      "ratio_victoires": "0.3684210526",
+      "ratio_defaites": "0.6315789474"
+    },
+    "statistiques_solo": {
+      "total_victoires": 1,
+      "total_defaites": 11,
+      "ratio_victoires": "0.0833333333",
+      "ratio_defaites": "0.9166666667"
+    },
+    "trophees": [
+      {
+        "roleId": "medium",
+        "level": 0,
+        "points": 11,
+        "pointsNextLevel": 20,
+        "category": "EASY"
+      },
+      {
+        "roleId": "headhunter",
+        "level": 0,
+        "points": 6,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      },
+      {
+        "roleId": "wolf-seer",
+        "level": 0,
+        "points": 5,
+        "pointsNextLevel": 10,
+        "category": "NORMAL"
+      }
+    ]
+  },
+  "clan": {
+    "donations": {
+      "gold": {
+        "week": 0,
+        "month": 0,
+        "year": 0,
+        "allTime": 585
+      },
+      "gems": {
+        "week": 0,
+        "month": 0,
+        "year": 0,
+        "allTime": 0
+      }
+    },
+    "xp_clan_total": 16102,
+    "staff": false,
+    "quetes": {
+      "participation_quetes": false,
+      "nombre_or": 2,
+      "nombre_gemmes": 0
+    }
+  }
+}
