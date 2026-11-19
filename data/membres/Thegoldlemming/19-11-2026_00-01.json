@@ -1,0 +1,158 @@
+{
+  "identifiant": "d8b48ead-faf1-4c44-b348-8a028af47ea8",
+  "nom_utilisateur": "Thegoldlemming",
+  "description": "",
+  "niveau": 18,
+  "status": "DEFAULT",
+  "date_creation": "2022-07-20T13:10:22.274Z",
+  "derniere_connexion": "2023-08-26T17:42:10.719Z",
+  "roses": {
+    "recus": 73,
+    "envoyees": 122,
+    "ratio": "0.60"
+  },
+  "icone_profil": {
+    "identifiant": "rW6",
+    "couleur": "#FBC02D"
+  },
+  "avatar_actuel": {},
+  "avatars": [
+    {
+      "url": "https://cdn-avatars.wolvesville.com/d09acdf2-c96a-4bf5-b333-2025d8f119d0.png",
+      "width": 84,
+      "height": 126
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/ea531704-370b-4652-b76b-4e4ee0c56d04.png",
+      "width": 110,
+      "height": 97
+    },
+    {
+      "url": "https://cdn-avatars.wolvesville.com/44920aa5-c297-4d41-8d5f-a4159cffa658.png",
+      "width": 102,
+      "height": 100
+    }
+  ],
+  "badges": [],
+  "cartes": [
+    {
+      "roleId1": "junior-werewolf",
+      "roleIdBase": "junior-werewolf",
+      "roleIdsAdvanced": [],
+      "abilityId1": "xp-increase-win-01",
+      "rarity": "COMMON"
+    },
+    {
+      "roleId1": "shadow-wolf",
+      "roleIdBase": "shadow-wolf",
+      "roleIdsAdvanced": [],
+      "abilityId1": "talismans-increase-effect-01",
+      "rarity": "COMMON"
+    },
+    {
+      "roleId1": "bandit",
+      "roleId2": "zombie",
+      "roleIdBase": "bandit",
+      "roleIdsAdvanced": [
+        "zombie"
+      ],
+      "abilityId1": "rose-server-boost-01",
+      "abilityId2": "voting-history-01",
+      "rarity": "EPIC"
+    },
+    {
+      "roleId1": "aura-seer",
+      "roleIdBase": "aura-seer",
+      "roleIdsAdvanced": [],
+      "abilityId1": "rose-server-boost-01",
+      "rarity": "COMMON"
+    },
+    {
+      "roleId1": "nightmare-werewolf",
+      "roleIdBase": "nightmare-werewolf",
+      "roleIdsAdvanced": [],
+      "abilityId1": "xp-increase-play-with-friends-01",
+      "rarity": "COMMON"
+    },
+    {
+      "roleId1": "corruptor",
+      "roleIdBase": "corruptor",
+      "roleIdsAdvanced": [],
+      "abilityId1": "talismans-no-consume-01",
+      "rarity": "COMMON"
+    },
+    {
+      "roleId1": "wolf-shaman",
+      "roleIdBase": "wolf-shaman",
+      "roleIdsAdvanced": [],
+      "abilityId1": "rose-server-boost-01",
+      "rarity": "COMMON"
+    }
+  ],
+  "statistiques": {
+    "statistiques_global": {
+      "total_victoires": 56,
+      "total_defaites": 93,
+      "total_nuls": 0,
+      "total_suicides": 3,
+      "ratio_victoires": "0.3684210526",
+      "ratio_defaites": "0.6118421053",
+      "ratio_nuls": "0.0000000000",
+      "ratio_suicides": "0.0197368421",
+      "total_parties_quitter_apres_mort": 0,
+      "total_parties_survecu": 0,
+      "total_parties_morts": 0,
+      "ratio_vivants": 0,
+      "ratio_morts": 0,
+      "total_minutes_jouer": 1283
+    },
+    "statistiques_village": {
+      "total_victoires": 41,
+      "total_defaites": 46,
+      "ratio_victoires": "0.4712643678",
+      "ratio_defaites": "0.5287356322"
+    },
+    "statistiques_loups": {
+      "total_victoires": 10,
+      "total_defaites": 27,
+      "ratio_victoires": "0.2702702703",
+      "ratio_defaites": "0.7297297297"
+    },
+    "statistiques_vote": {
+      "total_victoires": 2,
+      "total_defaites": 11,
+      "ratio_victoires": "0.1538461538",
+      "ratio_defaites": "0.8461538462"
+    },
+    "statistiques_solo": {
+      "total_victoires": 2,
+      "total_defaites": 8,
+      "ratio_victoires": "0.2000000000",
+      "ratio_defaites": "0.8000000000"
+    },
+    "trophees": []
+  },
+  "clan": {
+    "donations": {
+      "gold": {
+        "week": 0,
+        "month": 0,
+        "year": 0,
+        "allTime": 10
+      },
+      "gems": {
+        "week": 0,
+        "month": 0,
+        "year": 0,
+        "allTime": 0
+      }
+    },
+    "xp_clan_total": 3588,
+    "staff": false,
+    "quetes": {
+      "participation_quetes": false,
+      "nombre_or": 0,
+      "nombre_gemmes": 0
+    }
+  }
+}
